@@ -1,0 +1,11 @@
+<div class="elLoader" style="z-index: inherit 100; font-size: 36px; line-height: 0.67; color: #7f7f7f;padding-top: 20%;padding-left: 40%; background-color: white; position: fixed; width:100%; height:100%" [hidden]="!loader"><h1 id="cargandoText">Loading...</h1></div>
+<header *ngIf="!error">
+  <app-header></app-header>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
+<footer *ngIf="!error">
+  <app-footer ></app-footer>
+</footer>
+
